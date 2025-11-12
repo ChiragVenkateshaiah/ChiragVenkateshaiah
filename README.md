@@ -89,7 +89,7 @@ With a strong understanding of business requirements and data workflows, I now b
 
 ## Featured projects
 - [etl-pipeline-sample](https://github.com/your-username/etl-pipeline-sample) — End-to-end data ingestion & transformation (ADF + Databricks).
-- [sql-scripts-samples](https://github.com/your-username/sql-scripts-samples) — SQL queries, stored procedures & performance notes.
+- [sql-scripts-samples](https://github.com/ChiragVenkateshaiah/dvdrental-project) — SQL queries on dvdrental project 
 - [infra-templates](https://github.com/your-username/infra-templates) — ARM/Bicep or Terraform examples to deploy sample resources.
 ---
 
