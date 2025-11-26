@@ -2,7 +2,7 @@
 
 # I'm Chirag Venkateshaiah  
 
-🎯 **Aspiring Azure Data Engineer | 4 Years of Business Analyst Experience**  
+🎯 **Azure Data Engineer | 4 Years of Business Analyst Experience**  
 📍 Based in India | 🌐 Open to Global Opportunities  
 
 ---
