@@ -129,3 +129,6 @@ I am passionate about **data ingestion, transformation, and analytics enablement
 - 🐙 [GitHub: Explore repositories](https://github.com/ChiragVenkateshaiah?tab=repositories)
 
 ⭐ **Thanks for visiting — feel free to check out my work and collaborate!**
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
