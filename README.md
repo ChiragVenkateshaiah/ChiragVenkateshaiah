@@ -72,26 +72,26 @@ I am passionate about **data ingestion, transformation, and analytics enablement
 - Data transformation using **PySpark**
 - Optimized queries and analytics-ready datasets
 
-📌 Repo: `ADD LINK HERE`
+📌 Repo: [NYC Taxi Analytics Platform](https://github.com/ChiragVenkateshaiah/databricks_nyctaxi_project)
 
 ---
 
-### 🔹 Azure Data Factory – Metadata Driven ETL
-- Source → ADLS Gen2 → Azure SQL
-- Parameterized pipelines & triggers
-- Designed for scalability and reusability
+### 🔹 Music Streaming Web App
+- Secure backend APIs for music and podcast streaming
+- Cloud-based storage and database integration
+- Efficient audio straming with byte-range support
+- A real-time, beat-synced sonic wave visualizer on the frontend
 
-📌 Repo: `ADD LINK HERE`
+📌 Repo: [Music Streaming Web App](https://github.com/ChiragVenkateshaiah/music-streaming-web-app)
 
 ---
 
-### 🔹 Streaming Analytics Demo
-- Real-time ingestion using **Azure Stream Analytics**
-- Sink to ADLS & visualization via Power BI
-- Demonstrates event-based processing
+### DVD Rental Project🔹 
+- schema/ → Database table creation scripts
+- queries/ → Query practice and scenarios
+- data/ → Insert statements
 
-📌 Repo: `ADD LINK HERE`
-
+📌 Repo: [DVD Rental Project](https://github.com/ChiragVenkateshaiah/dvdrental-project)
 
 ---
 
@@ -111,7 +111,7 @@ I am passionate about **data ingestion, transformation, and analytics enablement
 - ✅ Python for Data Science
 - ✅ Big Data for Data Engineering
 - 📖 Azure Data Fundamentals (DP-900) – In Progress
-- 📖 Azure Data Engineer Associate (DP-203) – In Progress
+- 📖 Databricks Certified Data Engineer Associate - In Progress
 
 ---
 
@@ -124,6 +124,8 @@ I am passionate about **data ingestion, transformation, and analytics enablement
 ---
 
 📫 Connect With Me
-- 💼 LinkedIn: ADD LINK HERE
+- 💼 [LinkedIn:](www.linkedin.com/in/chiragvenkateshaiah)
 - 📧 Email: chiragvenkateshaiah@gmail.com
-- 🐙 GitHub: Explore repositories below 👇
+- 🐙 [GitHub: Explore repositories](https://github.com/ChiragVenkateshaiah?tab=repositories)
+
+⭐ **Thanks for visiting — feel free to check out my work and collaborate!**
