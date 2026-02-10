@@ -92,19 +92,6 @@ I am passionate about **data ingestion, transformation, and analytics enablement
 
 📌 Repo: `ADD LINK HERE`
 
----
-
-## 📂 Project Repository Template (Use This for New Projects)
-
-```md
-### 🔹 <Project Name>
-- Problem Statement:
-- Architecture:
-- Tools & Technologies:
-- Key Learnings:
-- Business Impact:
-
-📌 Repo: <GitHub Repository Link>
 
 ---
 
