@@ -1,134 +1,184 @@
-<!-- =========================== -->
-<!--  CHIRAG V README -->
-<!-- =========================== -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--           CHIRAG VENKATESHAIAH — Profile README          -->
+<!-- ═══════════════════════════════════════════════════════ -->
 
-<h1 align="center">👋 Hi, I'm Chirag Venkateshaiah</h1>
-
-<h3 align="center">
-Databricks Data Engineer | Python & Spark | Databricks | SQL
-</h3>
+<h1 align="center">Chirag Venkateshaiah</h1>
 
 <p align="center">
-📍 India &nbsp;•&nbsp; 🌍 Open to Global Opportunities  
+  <strong>Data Engineer &nbsp;|&nbsp; Cloud Engineering &nbsp;·&nbsp; DevOps &nbsp;·&nbsp; SRE</strong>
+</p>
+
+<p align="center">
+  Building data platforms. Operating them under real failure. Deploying them to production.
+</p>
+
+<p align="center">
+  📍 India &nbsp;·&nbsp; 🎯 Targeting Canada &nbsp;(Toronto &nbsp;·&nbsp; Vancouver &nbsp;·&nbsp; Remote)
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white"/>
 </p>
 
 ---
 
-## 🚀 Professional Overview
+## About
 
-I am a **Data Engineer** with a strong foundation in **Business Analysis** and **Data Platforms**, currently working as a **Databricks Data Engineer**.
+**4.5 years as an Integration Business Analyst in FinTech** — including six months onsite at First Abu Dhabi Bank (UAE) — gave me the domain depth. I understand the financial data that flows through the systems I build, not just the pipelines that carry it.
 
-Previously, I spent **4.5 years as an Integration Business Analyst** in the **FinTech domain**, including **6 months onsite in Abu Dhabi (UAE)** working with **First Abu Dhabi Bank (FAB)**.  
-This blend of **business context + hands-on engineering** allows me to design data pipelines that are not only scalable, but also *aligned with real business outcomes*.
+Now I'm building the infrastructure and operational depth to match: production-deployed platforms, real incident response, real cost-managed cloud architectures. I run a structured 20-week engineering programme. Every project has a correctness constraint, a live deployment, and a postmortem when something breaks.
 
-I am passionate about **data ingestion, transformation, and analytics enablement**, with a strong interest in **PySpark, SQL, and the Databricks Lakehouse architecture**.
-
----
-
-## 🧠 Career Summary
-
-- 🧩 **4.5+ years** as Integration Business Analyst (FinTech, Banking)
-- 🐍 **Python Developer Intern** → transitioning into Data Engineering
-- ☁️ Hands-on experience building **end-to-end data pipelines**
-- 🔄 Strong understanding of **ETL/ELT, data modeling, and analytics layers**
-- 🤝 Proven ability to translate **business requirements into technical solutions**
-- 📈 Focused on **data-driven decision making & business insights**
+**Open to:** Data Engineer · Cloud Data Engineer · Platform Engineer · DevOps roles in Canada
 
 ---
 
-## 🛠️ Core Technical Skills
+## What I'm Building
 
-### ☁️ Cloud & Data Platforms
-- Azure Data Factory (ADF)  
-- Azure Data Lake Storage Gen2  
-- Azure SQL Database  
-- Azure Synapse Analytics  
-- Azure Stream Analytics  
-- Databricks (Apache Spark / PySpark)
+<table>
+<tr>
+<td valign="top" width="50%">
 
-### 🧪 Data Engineering & Programming
-- Python  
-- PySpark  
-- SQL  
-- Delta Lake  
-- REST API Ingestion  
-- Batch & Streaming Pipelines  
+### [novapay-sre](https://github.com/ChiragVenkateshaiah/novapay-sre)
+`Go` `PostgreSQL` `systemd` `Ansible` `EC2` `Linux`
 
-### 📐 Data Modeling & Analytics
-- Star & Snowflake Schema  
-- Data Validation & Quality Checks  
-- Power BI (DAX, Data Modeling)  
-- Business Metrics & KPI Design  
+A production-style payments platform serving as a live SRE simulation. Enforces a
+double-entry accounting invariant on every transaction — no exceptions.
 
----
+Built and operated two real incidents:
+- **OOM kill ordering** hardened via cgroup-v2 MemoryHigh/MemoryMax + three-tier
+  OOMScoreAdjust (stub → API → Postgres — ledger dies last)
+- **Disk-fill defence** via logrotate (50M, 7 compressed rotations, SIGHUP reopen)
+  + journald SystemMaxUse cap — zero charge data loss
 
-## 📌 Featured Data Engineering Projects
+All decisions in Architecture Decision Records. Deployed on EC2, managed via Ansible.
 
-> These projects reflect **real-world data engineering workflows**, focusing on ingestion, transformation, optimization, and analytics enablement.
+</td>
+<td valign="top" width="50%">
 
-### 🔹 NYC Taxi Analytics Platform (Databricks + PySpark)
-- End-to-end **batch ingestion pipeline**
-- Bronze → Silver → Gold architecture using **Delta Lake**
-- Data transformation using **PySpark**
-- Optimized queries and analytics-ready datasets
+### [cerberus](https://github.com/ChiragVenkateshaiah/cerberus)
+`AWS` `EMR Serverless` `Athena` `S3 Iceberg` `dbt` `Airflow` `OpenTofu`
 
-📌 Repo: [NYC Taxi Analytics Platform](https://github.com/ChiragVenkateshaiah/databricks_nyctaxi_project)
+Serverless-first AWS data engineering platform running in `ap-south-1`.
 
----
+Replaced an EC2-based architecture after cost analysis proved a 2× runway extension
+on fixed AWS credits — EMR Serverless bills at $0 when idle, vs. continuous EBS
+billing even for a stopped EC2.
 
-### 🔹 Music Streaming Web App
-- Secure backend APIs for music and podcast streaming
-- Cloud-based storage and database integration
-- Efficient audio straming with byte-range support
-- A real-time, beat-synced sonic wave visualizer on the frontend
+Infrastructure provisioned with OpenTofu. Budget alerts ($10 warn / $15 ceiling)
+and CloudWatch observability wired from the first commit, not as an afterthought.
 
-📌 Repo: [Music Streaming Web App](https://github.com/ChiragVenkateshaiah/music-streaming-web-app)
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
 
----
+### [novalake](https://github.com/ChiragVenkateshaiah/novalake)
+`Databricks` `PySpark` `Delta Lake` `Lakeflow` `Vector Search` `Genie`
 
-### DVD Rental Project🔹 
-- schema/ → Database table creation scripts
-- queries/ → Query practice and scenarios
-- data/ → Insert statements
+Databricks lakehouse built as the analytical counterpart to NovaPay. The same
+synthetic payment event stream feeds this platform end-to-end:
 
-📌 Repo: [DVD Rental Project](https://github.com/ChiragVenkateshaiah/dvdrental-project)
+**Bronze → Silver → Gold → Serving → GenAI (RAG + support-assist agent)**
 
----
+Every transformation is hand-written before any orchestration abstraction is
+introduced. Each layer is understood before it is adopted. No tutorial shortcuts.
 
-## 🧩 Business Analyst Experience Highlights
-- Worked on enterprise integration projects in FinTech & Banking
-- Onsite engagement with First Abu Dhabi Bank (UAE)
-- Requirement gathering, data mapping & system integration
-- Designed dashboards and KPIs for leadership
-- Collaborated with engineering, product & stakeholders
+</td>
+<td valign="top" width="50%">
 
-➡️ This experience strongly influences how I design analytics-ready data platforms today.
+### [aegis](https://github.com/ChiragVenkateshaiah/aegis)
+`Python` `Claude (Anthropic) APIs` `PostgreSQL` `Streamlit`
 
----
+AI co-pilot for SME credit underwriting. Reduces memo preparation time from
+~6 hours to ~8 minutes.
 
-📚 Learning & Certifications
+Extracts financial data from messy borrower documents via Claude vision + OCR
+fallback, runs cross-document reconciliation to catch inconsistencies, computes
+key ratios against lender thresholds, and generates a fully cited draft memo.
 
-- ✅ Python for Data Science
-- ✅ Big Data for Data Engineering
-- 📖 Azure Data Fundamentals (DP-900) – In Progress
-- 📖 Databricks Certified Data Engineer Associate - In Progress
+**Target buyers:** Community banks ($5B–$50B assets) and SME lending fintechs
+across the US and Canada.
+
+</td>
+</tr>
+</table>
 
 ---
 
-🌱 Currently Focusing On
-- CI/CD for Data Pipelines (Azure DevOps)
-- Lakehouse Architecture Best Practices
-- Spark Performance Optimization
-- Data Platform Design for Analytics & AI
+## Portfolio
+
+Foundational projects demonstrating the data engineering and analytics skills that underpin the active builds above.
+
+| Project | Stack | What it demonstrates |
+|---|---|---|
+| [NYC Taxi Analytics Platform](https://github.com/ChiragVenkateshaiah/nyc-taxi-analytics-platform) | Databricks · PySpark · Delta Lake | End-to-end batch ingestion pipeline; Bronze→Silver→Gold Medallion; query-optimised Delta tables for analytics consumers |
+| [Music Streaming Web App](https://github.com/ChiragVenkateshaiah/music-streaming-web-app) | Python · PostgreSQL · REST APIs | Full-stack application built end-to-end — secure backend APIs, cloud database integration, byte-range audio delivery, real-time frontend visualiser |
+| [DVD Rental Analytics](https://github.com/ChiragVenkateshaiah/dvdrental-project) | PostgreSQL · SQL | Business-metric query library: window functions, aggregations, KPI design — translating business questions into reporting-layer SQL |
 
 ---
 
-📫 Connect With Me
-- 💼 [LinkedIn:](www.linkedin.com/in/chiragvenkateshaiah)
-- 📧 Email: chiragvenkateshaiah@gmail.com
-- 🐙 [GitHub: Explore repositories](https://github.com/ChiragVenkateshaiah?tab=repositories)
+## Technical Stack
 
-⭐ **Thanks for visiting — feel free to check out my work and collaborate!**
+**Data Engineering**
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+| | |
+|---|---|
+| Processing | PySpark · SQL · dbt · Delta Lake · Apache Iceberg |
+| Orchestration | Apache Airflow · Databricks Lakeflow · Declarative Pipelines |
+| Ingestion | Batch ETL/ELT · REST API · Event-driven · Streaming |
+| Modelling | Medallion architecture · Star/Snowflake schema · Dimensional modelling |
 
+**Cloud & Infrastructure**
+
+| | |
+|---|---|
+| AWS | EMR Serverless · Athena · S3 · Glue · CloudWatch · Budgets · IAM |
+| Databricks | Unity Catalog · Delta Live Tables · Vector Search · Genie · AI/BI |
+| IaC | Ansible · OpenTofu |
+| Compute | EC2 · systemd · cgroup-v2 resource management |
+
+**Systems & Reliability**
+
+| | |
+|---|---|
+| Languages | Go · Python |
+| Databases | PostgreSQL (pgx/v5 · connection pooling · ACID transactions) · SQLite |
+| Observability | journald · logrotate · structured logging · audit trails |
+| Reliability | Incident response · postmortems · runbooks · full-jitter exponential backoff |
+
+**AI Engineering**
+
+| | |
+|---|---|
+| Claude APIs | Vision · tool use · structured extraction · citation-grounded generation |
+| Local AI | Ollama (llama3.2 · nomic-embed-text) · vector similarity search · RAG |
+| Evaluation | Gold-standard benchmarks · extraction quality measurement · LLM eval harnesses |
+
+---
+
+## Certifications & Path
+
+| Certification | Status |
+|---|---|
+| AWS Solutions Architect Associate (SAA) | 📅 Target: Week 12 |
+| Anthropic CCF-A — Claude Certified Foundations Architect | 🔄 In progress — practised through the AEGIS build |
+| SRE / DevOps / Platform Engineering — discipline decision | 📍 Week-20 checkpoint |
+
+---
+
+## Connect
+
+<p>
+  <a href="https://www.linkedin.com/in/chiragvenkateshaiah">💼 LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:chiragvenkateshaiah95@gmail.com">📧 chiragvenkateshaiah95@gmail.com</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/ChiragVenkateshaiah?tab=repositories">🐙 All Repositories</a>
+</p>
