@@ -168,7 +168,7 @@ Foundational projects demonstrating the data engineering and analytics skills th
 | Certification | Status |
 |---|---|
 | AWS Solutions Architect Associate (SAA) | 📅 Target: Week 12 |
-| Anthropic CCF-A — Claude Certified Foundations Architect | 🔄 In progress — practised through the AEGIS build |
+| Anthropic CCF-A — Claude Certified Foundations Architect | Completed |
 | SRE / DevOps / Platform Engineering — discipline decision | 📍 Week-20 checkpoint |
 
 ---
