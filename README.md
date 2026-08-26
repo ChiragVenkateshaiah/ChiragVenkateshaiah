@@ -108,6 +108,26 @@ across the US and Canada.
 
 </td>
 </tr>
+<tr>
+<td valign="top" colspan="2">
+
+### [charon](https://github.com/ChiragVenkateshaiah/charon)
+`GCP` `NVIDIA L4` `Python` `Bash`
+
+A self-service GPU inference platform: deploy a model artifact, optimise it, roll it
+out safely, and measure cost per token at every step — with the optimisation path
+itself treated as a benchmarked deployment target, not an afterthought.
+
+Governed by one hard rule: every phase ships a measured number on real hardware, or it
+hasn't shipped. Runs on a spot `g2-standard-4` (1× L4, 24GB) under a ₹1,000/month
+budget — GPU powered on only while a measurement is actively running, everything else
+done locally on CPU.
+
+**Status:** repository scaffolded, Phase 1 (inference mechanics) underway — first
+benchmark not yet run.
+
+</td>
+</tr>
 </table>
 
 ---
